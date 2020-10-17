@@ -10,9 +10,6 @@ function mdls(file, args, ready) {
       ready = args;
   }
   file = path.resolve(file)
-      .replace(/ /g, '\\ ')
-      .replace(/\(/g, '\\(')
-      .replace(/\)/g, '\\)')
 
   return new Promise((resolve, reject) => {
       exec('mdls ' + (args ? args + ' ' : '') + `"${file}"`, function(err, raw_data) {
