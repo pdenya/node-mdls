@@ -15,7 +15,7 @@ function mdls(file, args, ready) {
       .replace(/\)/g, '\\)')
 
   return new Promise((resolve, reject) => {
-      exec('mdls ' + (args ? args + ' ' : '') + file, function(err, raw_data) {
+      exec('mdls ' + (args ? args + ' ' : '') + `"${file}"`, function(err, raw_data) {
         if(err) {
           if (ready) ready(err)
           reject(err);
