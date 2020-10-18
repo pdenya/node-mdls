@@ -6,6 +6,10 @@ A thin wrapper around [mdls](https://developer.apple.com/library/Mac/documentati
 
 You give it a path, it runs mdls and calls a callback with the result.
 
+## FORK CHANGES
+
+Forked from https://github.com/AWinterman/node-mdls because of https://github.com/AWinterman/node-mdls/pull/6.
+
 ## Install
 
 `npm install --save mdls`
